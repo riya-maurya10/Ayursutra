@@ -1,0 +1,10 @@
+package com.ayursutra.constant;
+
+public enum AppointmentType {
+    INITIAL_CONSULTATION,
+    FOLLOW_UP,
+    PANCHAKARMA_ASSESSMENT,
+    GENERAL_AYURVEDIC,
+    DIET_LIFESTYLE_CONSULTATION,
+    WELLNESS_CHECKUP
+}

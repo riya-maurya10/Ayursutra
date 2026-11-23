@@ -1,0 +1,59 @@
+package com.ayursutra.service;
+
+import com.ayursutra.dto.request.TherapySessionRequest;
+import com.ayursutra.dto.response.TherapySessionResponse;
+
+import java.util.List;
+
+public interface TherapySessionService {
+
+    TherapySessionResponse createSession(
+            TherapySessionRequest request
+    );
+
+    List<TherapySessionResponse> getAllSessions();
+
+    TherapySessionResponse getSessionById(
+            String id
+    );
+
+    List<TherapySessionResponse> getSessionsByPatient(
+            String patientId
+    );
+
+    List<TherapySessionResponse> getSessionsByTherapyPlan(
+            String therapyPlanId
+    );
+
+    List<TherapySessionResponse> getSessionsByTherapist(
+            String therapistId
+    );
+
+    List<TherapySessionResponse> getSessionsByRoom(
+            String roomId
+    );
+
+    List<TherapySessionResponse> getSessionsByDate(
+            String date
+    );
+
+    List<TherapySessionResponse> getSessionsByPlanAndDay(
+            String therapyPlanId,
+            Integer dayNumber
+    );
+
+    TherapySessionResponse updateSession(
+            String id,
+            TherapySessionRequest request
+    );
+
+    TherapySessionResponse updateSessionStatus(
+            String id,
+            String status,
+            String notes
+    );
+
+    void deleteSession(
+            String id
+    );
+}

@@ -1,0 +1,47 @@
+
+# ==============================
+# Frontend dependencies and builds
+# ==============================
+ayursutra-frontend/node_modules/
+ayursutra-frontend/dist/
+ayursutra-frontend/build/
+
+# ==============================
+# Backend builds and IDE
+# ==============================
+ayursutra-backend/target/
+ayursutra-backend/.idea/
+
+# ==============================
+# Private backend configuration
+# ==============================
+ayursutra-backend/src/main/resources/application.yml
+
+# Private uploaded documents/files
+ayursutra-backend/uploads/
+
+# ==============================
+# Environment files and secrets
+# ==============================
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+
+# ==============================
+# Logs
+# ==============================
+*.log
+npm-debug.log*
+
+# ==============================
+# IDE and OS
+# ==============================
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+desktop.ini
